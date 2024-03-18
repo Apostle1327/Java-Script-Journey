@@ -1,4 +1,4 @@
-# 🚀 Welcome to My JavaScript  Journey! 📚
+# 🚀 Welcome to My JavaScript Journey! 📚
 
 Salutations! I am Neville, and I'm thrilled to embark on this exciting journey through the strange but dynamic world of JavaScript.
 
@@ -18,7 +18,7 @@ Here are some incredible resources that have been instrumental in shaping my lea
 
 - [MDN Web Docs: JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) 📖: A comprehensive and reliable source for JavaScript documentation and tutorials.
 
-- [JavaScript.info](https://javascript.info/) 💻: An interactive tutorial website covering JavaScript from basics to advanced topics.
+- [JavScript Tutorial](https://www.javascripttutorial.net/) 💻: An interactive tutorial website covering JavaScript from basics to advanced topics.
 
 - [FreeCodeCamp](https://www.freecodecamp.org/) 🌐: An online platform offering free coding challenges, projects, and certifications in JavaScript and other programming languages.
 
