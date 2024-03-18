@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+.board {
+  border: 1px solid #c38154;
+  margin: auto;
+  width: 872px;
+  overflow: hidden;
+}
+
+.block-odd {
+  background-color: #f8f8f2;
+  float: left;
+  font-size: 47px;
+  height: 87px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 87px;
+}
+
+.block-even {
+  background-color: #8cc3d7;
+  float: left;
+  font-size: 47px;
+  height: 87px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 87px;
+}
+.dice {
+  position: absolute;
+  right: 90px;
+  top: 100px;
+}
+
+.chance {
+  position: relative;
+  width: 3em;
+  height: 2.5em;
+  background-color: #644dff;
+  overflow: hidden;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scale: 2;
+  box-shadow: 0 0.5em #4836bb;
+  transition: all 0.1s ease;
+  filter: drop-shadow(0 6px 2px #4836bb38);
+  border: 1px solid #4836bb;
+}
+
+.button {
+  font-weight: 800;
+  cursor: pointer;
+  position: absolute;
+  text-transform: uppercase;
+  height: 110%;
+  width: 110%;
+  background-color: #644dff;
+  color: white;
+}
+
+.chance:has(.button:active) {
+  box-shadow: none;
+  margin-top: 2em;
+  filter: drop-shadow(0 3px 1px #4836bbbe);
+}
+
+.dice #d1 {
+  position: absolute;
+  top: 90px;
+}

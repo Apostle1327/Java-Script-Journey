@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snakes & Ladders</title>
+
+    <!-- Bootstrap File -->
+    <link rel="stylesheet" href="Assets/CSS/bootstrap.css" />
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="Assets/CSS/Style.CSS" />
+
+    <script>
+      localStorage.setItem("player", 1);
+      localStorage.setItem("player1_count", 0);
+      localStorage.setItem("player2_count", 0);
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="board">
+        <div class="row-10">
+          <div id="b100" class="block-even">100</div>
+          <div id="b99" class="block-odd">99</div>
+          <div id="b98" class="block-even">98</div>
+          <div id="b97" class="block-odd">97</div>
+          <div id="b96" class="block-even">96</div>
+          <div id="b95" class="block-odd">95</div>
+          <div id="b94" class="block-even">94</div>
+          <div id="b93" class="block-odd">93</div>
+          <div id="b92" class="block-even">92</div>
+          <div id="b91" class="block-odd">91</div>
+        </div>
+
+        <div class="row-09">
+          <div id="b81" class="block-odd">81</div>
+          <div id="b82" class="block-even">82</div>
+          <div id="b83" class="block-odd">83</div>
+          <div id="b84" class="block-even">84</div>
+          <div id="b85" class="block-odd">85</div>
+          <div id="b86" class="block-even">86</div>
+          <div id="b87" class="block-odd">87</div>
+          <div id="b88" class="block-even">88</div>
+          <div id="b89" class="block-odd">89</div>
+          <div id="b90" class="block-even">90</div>
+        </div>
+
+        <div class="row-08">
+          <div id="b80" class="block-even">80</div>
+          <div id="b79" class="block-odd">79</div>
+          <div id="b78" class="block-even">78</div>
+          <div id="b77" class="block-odd">77</div>
+          <div id="b76" class="block-even">76</div>
+          <div id="b75" class="block-odd">75</div>
+          <div id="b74" class="block-even">74</div>
+          <div id="b73" class="block-odd">73</div>
+          <div id="b72" class="block-even">72</div>
+          <div id="b71" class="block-odd">71</div>
+        </div>
+
+        <div class="row-07">
+          <div id="b61" class="block-odd">61</div>
+          <div id="b62" class="block-even">62</div>
+          <div id="b63" class="block-odd">63</div>
+          <div id="b64" class="block-even">64</div>
+          <div id="b65" class="block-odd">65</div>
+          <div id="b66" class="block-even">66</div>
+          <div id="b67" class="block-odd">67</div>
+          <div id="b68" class="block-even">68</div>
+          <div id="b69" class="block-odd">69</div>
+          <div id="b70" class="block-even">70</div>
+        </div>
+
+        <div class="row-06">
+          <div id="b60" class="block-even">60</div>
+          <div id="b59" class="block-odd">59</div>
+          <div id="b58" class="block-even">58</div>
+          <div id="b57" class="block-odd">57</div>
+          <div id="b56" class="block-even">56</div>
+          <div id="b55" class="block-odd">55</div>
+          <div id="b54" class="block-even">54</div>
+          <div id="b53" class="block-odd">53</div>
+          <div id="b52" class="block-even">52</div>
+          <div id="b51" class="block-odd">51</div>
+        </div>
+
+        <div class="row-05">
+          <div id="b41" class="block-odd">41</div>
+          <div id="b42" class="block-even">42</div>
+          <div id="b43" class="block-odd">43</div>
+          <div id="b44" class="block-even">44</div>
+          <div id="b45" class="block-odd">45</div>
+          <div id="b46" class="block-even">46</div>
+          <div id="b47" class="block-odd">47</div>
+          <div id="b48" class="block-even">48</div>
+          <div id="b49" class="block-odd">49</div>
+          <div id="b50" class="block-even">50</div>
+        </div>
+
+        <div class="row-04">
+          <div id="b40" class="block-even">40</div>
+          <div id="b39" class="block-odd">39</div>
+          <div id="b38" class="block-even">38</div>
+          <div id="b37" class="block-odd">37</div>
+          <div id="b36" class="block-even">36</div>
+          <div id="b35" class="block-odd">35</div>
+          <div id="b34" class="block-even">34</div>
+          <div id="b33" class="block-odd">33</div>
+          <div id="b32" class="block-even">32</div>
+          <div id="b31" class="block-odd">31</div>
+        </div>
+
+        <div class="row-03">
+          <div id="b21" class="block-odd">21</div>
+          <div id="b22" class="block-even">22</div>
+          <div id="b23" class="block-odd">23</div>
+          <div id="b24" class="block-even">24</div>
+          <div id="b25" class="block-odd">25</div>
+          <div id="b26" class="block-even">26</div>
+          <div id="b27" class="block-odd">27</div>
+          <div id="b28" class="block-even">28</div>
+          <div id="b29" class="block-odd">29</div>
+          <div id="b30" class="block-even">30</div>
+        </div>
+
+        <div class="row-02">
+          <div id="b20" class="block-even">20</div>
+          <div id="b19" class="block-odd">19</div>
+          <div id="b18" class="block-even">18</div>
+          <div id="b17" class="block-odd">17</div>
+          <div id="b16" class="block-even">16</div>
+          <div id="b15" class="block-odd">15</div>
+          <div id="b14" class="block-even">14</div>
+          <div id="b13" class="block-odd">13</div>
+          <div id="b12" class="block-even">12</div>
+          <div id="b11" class="block-odd">11</div>
+        </div>
+
+        <div class="row-01">
+          <div id="b1" class="block-odd">1</div>
+          <div id="b2" class="block-even">2</div>
+          <div id="b3" class="block-odd">3</div>
+          <div id="b4" class="block-even">4</div>
+          <div id="b5" class="block-odd">5</div>
+          <div id="b6" class="block-even">6</div>
+          <div id="b7" class="block-odd">7</div>
+          <div id="b8" class="block-even">8</div>
+          <div id="b9" class="block-odd">9</div>
+          <div id="b10" class="block-even">10</div>
+        </div>
+
+        <div class="dice">
+          <div class="chance">
+            <input
+              type="button"
+              class="button"
+              onclick="rollDice()"
+              value="roll"
+            />
+          </div>
+          <div id="d1"></div>
+        </div>
+      </div>
+    </div>
+    <script src="Assets/JavaScript/main.js"></script>
+    <script src="Assets/JavaScript/bootstrap.bundle.js"></script>
+  </body>
+</html>
