@@ -2,6 +2,19 @@ localStorage.setItem("player", 1);
 localStorage.setItem("player1_count", 0);
 localStorage.setItem("player2_count", 0);
 
+const s = [
+  [99, 81, 80, 61, 62, 59, 41, 40, 21],
+  [78, 64, 57, 43, 44, 36, 25],
+  [52, 49, 48, 33, 28],
+  [95, 86, 72],
+  [93, 88, 89],
+];
+
+const l = [
+  [4, 16, 27],
+  [47, 55, 65, 77, 84],
+];
+
 function rollDice() {
   let p = parseInt(localStorage.getItem("player"));
   let chance = Math.ceil(Math.random() * 6);
@@ -36,7 +49,7 @@ function rollDice() {
     } else {
       let b1 = document.getElementById("b" + x);
       b1.style.backgroundColor = "green";
-      b1.style.transition=""
+      b1.style.transition = "";
     }
 
     if (chance == 6) {
